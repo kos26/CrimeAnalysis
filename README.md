@@ -2,7 +2,7 @@
 
 https://www.kaggle.com/mchirico/philadelphiacrimedata
 
-	For our project, we would like to conduct an analysis on a Philadelphia crime dataset published by OpenPhillyData. The dataset dates from 12-31-05 to 03-22-17 (majority of the dates are from 2006-2016). There are 14 total columns in this dataset. They include the district number, sector, dispatch date, dispatch time, location, general code, descriptions of the crime, and the district. This dataset was published to the public so people can assess the crimes happening in Philadelphia. For our exploratory data analysis, we will perform data cleansing, use data transformation to create new variables, and then create visualizations to answer the questions posed in this document
+For our project, we would like to conduct an analysis on a Philadelphia crime dataset published by OpenPhillyData. The dataset dates from 12-31-05 to 03-22-17 (majority of the dates are from 2006-2016). There are 14 total columns in this dataset. They include the district number, sector, dispatch date, dispatch time, location, general code, descriptions of the crime, and the district. This dataset was published to the public so people can assess the crimes happening in Philadelphia. For our exploratory data analysis, we will perform data cleansing, use data transformation to create new variables, and then create visualizations to answer the questions posed in this document
 
 # Weather Data: 
 http://www.climate.psu.edu/data/city_information/index.php?city=phl&page=dwa&type=big7
@@ -11,7 +11,7 @@ To assist in getting more out of our analysis, we will be scraping Philadelphia 
 
 # Understanding the Target Data and Substantiating its Existence
 
-	Potential users of this analysis are law enforcement agencies so that they can dedicate resources and assistance to areas with high severity of crimes. They will also be able to assess the crime rates and find trends in crimes. Our proposed solution is to create a model (If applicable) that can predict the crimes in order to help the agencies plan out their resources in order to lessen the number of crimes and make Philly safer.
+Potential users of this analysis are law enforcement agencies so that they can dedicate resources and assistance to areas with high severity of crimes. They will also be able to assess the crime rates and find trends in crimes. Our proposed solution is to create a model (If applicable) that can predict the crimes in order to help the agencies plan out their resources in order to lessen the number of crimes and make Philly safer.
 
 ## We will attempt to answer the following questions in our analysis:
 
