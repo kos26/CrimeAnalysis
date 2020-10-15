@@ -15,14 +15,14 @@ Potential users of this analysis are law enforcement agencies so that they can d
 
 ## We will attempt to answer the following questions in our analysis:
 
-  ### What are the top 10 crimes over the 10 year period ?
-  ### Have crimes been increasing over the 10 year period?
-  ### What types of crimes are on the rise? What types of crimes have fallen? (Over 10 year period)
-  ### Create a heat map with the severity of the crimes (ie. thefts) to answer questions around the areas with the highest counts of the associated crimes.
-  ### What District/Region has the most crimes?
-  ### Does the season affect the number of crimes?
-  ### What are the dangerous times (hours) to be outside or for crimes to happen?
-  ### If applicable, predict the number of crimes related to the top 3 incidents.
-  ### Given a location, what kind of crime occurs the most?
-  ### Is there a pattern to the occurrence of crime? Example: a day of a week when it is more likely that a crime will occur,  the average number of crimes likely to occur in a day, week or month.
+  ##### What are the top 10 crimes over the 10 year period ?
+  ##### Have crimes been increasing over the 10 year period?
+  ##### What types of crimes are on the rise? What types of crimes have fallen? (Over 10 year period)
+  ##### Create a heat map with the severity of the crimes (ie. thefts) to answer questions around the areas with the highest counts of the associated crimes.
+  ##### What District/Region has the most crimes?
+  ##### Does the season affect the number of crimes?
+  ##### What are the dangerous times (hours) to be outside or for crimes to happen?
+  ##### If applicable, predict the number of crimes related to the top 3 incidents.
+  ##### Given a location, what kind of crime occurs the most?
+  ##### Is there a pattern to the occurrence of crime? Example: a day of a week when it is more likely that a crime will occur,  the average number of crimes likely to occur in a day, week or month.
 
