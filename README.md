@@ -37,6 +37,11 @@ We will attempt to answer the following questions in our analysis:
 
 # TEAM MEMBERS
 
+### Kunal Sharma
+- Education: MS Data Science Drexel University (in-progress)
+- Occupation: Student
+- Skills: Data engineering, machine learning
+
 ### Hong Son
 - Education: BS/MS Data Science Drexel University (in-progress)
 - Occupation: Student
@@ -46,11 +51,6 @@ We will attempt to answer the following questions in our analysis:
 - Education: BS/MS Data Science Drexel University (in-progress)
 - Occupation: Student
 - Skills: Data cleansing, statistical analysis, and documentation. 
-
-### Kunal Sharma
-- Education: MS Data Science Drexel University (in-progress)
-- Occupation: Student
-- Skills: Data engineering, machine learning
 
 
 # EXPLANATION OF DATASETS
