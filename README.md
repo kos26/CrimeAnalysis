@@ -1,98 +1,102 @@
-# Crime-in-Philadelphia
-## Capstone Project for DSCI 591, Fall 2020, Crime in Philadelphia
-### Introduction
+# Exploring Schooling in Covid-19 Twitter Chatter Dataset
+## Project for DSCI 521, Winter 2020
 
-For our project, we would like to conduct an analysis on a Philadelphia crime dataset published by OpenPhillyData. The dataset dates from 12-31-05 to 03-22-17 (majority of the dates are from 2006-2016). There are 14 total columns in this dataset. They include the district number, sector, dispatch date, dispatch time, location, general code, descriptions of the crime, and the district. This dataset was published to the public so people can assess the crimes happening in Philadelphia. For our exploratory data analysis, we will perform data cleansing, use data transformation to create new variables, and then create visualizations to answer the questions posed in this document
+### Introduction and Background
 
-To assist in getting more out of our analysis, we will be scraping Philadelphia weather data for Philadelphia from 2007 to 2018. The dataset includes the temperatures in Fahrenheit, the max and min temperature, environment information, wind, and precipitation. The data was formatted into PDF files and a dataset was formed [~4,000 rows and 15 columns].
+Over a billion students worldwide are unable to go to school or university, due to measures to stop the spread of COVID-19. The pandemic is expected to have a huge impact on global education.
 
-Potential users of this analysis are law enforcement agencies so that they can dedicate resources and assistance to areas with high severity of crimes. They will also be able to assess the crime rates and find trends in crimes. Our proposed solution is to create a model (If applicable) that can predict the crimes in order to help the agencies plan out their resources in order to lessen the number of crimes and make Philly safer.
+At their peak, the closures affected at least 55.1 million students in 124,000 U.S. public and private schools. Nearly every state either ordered or recommended that schools remain closed through the end of the 2019-20 school year.
 
-We will attempt to answer the following questions in our analysis:
+Our proposed solutions is to use multiple models thats can predict and classify tweets that are supporting virtual/online school vs face-to-face school. This would give insights to school officials, government officials and the general public about making improvements while educating students.
 
-- What are the top 10 crimes over the 10 year period ? 
-- Have crimes been increasing over the 10 year period? 
-- What types of crimes are on the rise? What types of crimes have fallen? (Over 10 year period) 
-- Create a heat map with the severity of the crimes (ie. thefts) to answer questions around the areas with the highest counts of the associated crimes. 
-- What District/Region has the most crimes?  
-- Does the season affect the number of crimes? 
-- What are the dangerous times (hours) to be outside or for crimes to happen? 
-- Given a location, what kind of crime occurs the most? 
-- Is there a pattern to the occurrence of crime? Example: a day of a week when it is more likely that a crime will occur,  the average number of crimes likely to occur in a day, week or month.
-- Is the average crime count the same across regions (north, west, south) in Philadelphia?
-- Is there a correlation between temperature (F) and number of crimes?
+Our proposed solution is to create multiple models that can predict and classify the type of crime. This can also help provide community insights on how to make improvements to reduce the crime from occuring in the first place. Another solution we intend to work on is predicting which neighborhoods are likely to increase and decrease in crime rates. 
+
+Philadelphia Crime/Weather Data and Philadelphia Parking Violation:
+From last term, these Philadelphia Crime/Weather Data were cleansed and integrated. We will integrate Philadelphia Parking Violation based on location features such as lat and lon. From this we will be able to create zip codes for crime predictive analysis. 
+
+We'll be doing detailed analysis on text data and manually label each tweets after filtering out tweets which contains keywords. We'll apply the labeled dataset to machine learning models to predict and classify whether a tweet is supporting virtual education or face-to-face. The machine learning part of the project will be made up of three components: data transformation, data integration, and classification. For classification, we will do our best to implement all of the following model types: Logistic Regression, Decision Tree Classifier, Randomforest and Naive bayes.
 
 
 # Table of Contents
 1. [Team Members](#TEAM-MEMBERS)
 1. [Datasets](#EXPLANATION-OF-DATASETS)
-1. [Outline](#OUTLINE)
-1. [Pitch Presentation](#PITCH-PRESENTATION)
 1. [Pre-Processing](#DATA-PRE-PROCESSING)
-1. [Analysis](#DATA-ANALYSIS)
-1. [Exploratory Data Analytics Report](#EXPLORATORY-DATA-ANALYTICS)
-1. [Visualization](#DATA-VISUALIZATION)
+1. [Exploratory Data Analytics](#EXPLORATORY-DATA-ANALYTICS)
+1. [Conclusion](#CONCLUSION)
 1. [Final Presentation](#FINAL-PRESENTATION)
 
 
-# TEAM MEMBERS
+## TEAM MEMBERS
+
+### Yiyun (Kate) Fan (yf366@drexel.edu)
+- Background: 2nd-year PhD student from Drexel University’s School of Education
+- Self-identified skills: Domain knowledge (education), Python programming, Network analysis, Project management
+- Individual contributions: Conceptualization, Dataset Preparation, Collaboration on programming, Presentation.
+
+### Shreekant Malviya (sm4546@drexel.edu)
+- Background: 2nd- year MS in Information Systems minor in Applied Data Science
+- Self-identified skills: Python programming, Data analysis & visualization, Project management
+- Individual contributions: Data Analysis and modeling , Machine Learning, Data cleansing, Documentation and Presentation. 
 
 ### Kunal Sharma
-- Education: MS Data Science Drexel University (in-progress)
-- Occupation: Student
-- Skills: Data engineering, machine learning
-
-### Hong Son
-- Education: BS/MS Data Science Drexel University (in-progress)
-- Occupation: Student
-- Skills: Data engineering, machine learning, and presenting. 
-
-### Raj Patel
-- Education: BS/MS Data Science Drexel University (in-progress)
-- Occupation: Student
-- Skills: Data cleansing, statistical analysis, and documentation. 
+- Background: 2nd-year MS in Data Science
+- Self-identified skills: Programming, Project management, Data Analysis
+- Individual contributions: Data engineering, Machine Learning, Data cleansing.
 
 
-# EXPLANATION OF DATASETS
+## EXPLANATION OF DATASETS
+[Datasets]
 
 ## MAIN DATASETS
-### Philadelphia Crime Data:
-https://www.kaggle.com/mchirico/philadelphiacrimedata
-
-For our project, we would like to conduct an analysis on a Philadelphia crime dataset published by OpenPhillyData. The dataset dates from 12-31-05 to 03-22-17 (majority of the dates are from 2006-2016). There are 14 total columns in this dataset. They include the district number, sector, dispatch date, dispatch time, location, general code, descriptions of the crime, and the district. This dataset was published to the public so people can assess the crimes happening in Philadelphia. For our exploratory data analysis, we will perform data cleansing, use data transformation to create new variables, and then create visualizations to answer the questions posed in this document
-
-
-## SECONDARY DATASETS
-### Weather Data: 
-http://www.climate.psu.edu/data/city_information/index.php?city=phl&page=dwa&type=big7
-
-To assist in getting more out of our analysis, we will be scraping Philadelphia weather data for Philadelphia from 2007 to 2018. The dataset includes the temperatures in Fahrenheit, the max and min temperature, environment information, wind, and precipitation. The data was formatted into PDF files and a dataset was formed [~4,000 rows and 15 columns].
+### A large-scale COVID-19 Twitter chatter dataset by Banda et al. (2020): 
+<ul>
+    <li>Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords: 
+    “COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”<li>
+    <li>Has been sharing dehydrated daily dataset since March to the present day (as of 03/10/2021) on Github: 
+    https://github.com/thepanacealab/covid19_twitter<li>
+    <li>Article introducing the dataset by the authors: 
+    Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020). A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688<li>
+<ul>
 
 
-# OUTLINE
-
-[Outline Report]
-(https://github.com/kos26/CrimeAnalysis/blob/main/Reports/Project%20Outline_%20Crimes%20in%20Philadelphia.pdf)
-
-
-# PITCH PRESENTATION
-
-[Pitch Presentation]
-(https://github.com/kos26/CrimeAnalysis/blob/main/Presentations/Pitch%20Presentation.pptx)
-
-
-# DATA-PRE-PROCESSING
+## DATA-PRE-PROCESSING
 
 [Data Acquisition and Per-Processing Report]
-(https://github.com/kos26/CrimeAnalysis/blob/main/Reports/DSCI%20591%20Data%20Acquisition%20and%20Per-Processing%20Report.pdf)
+<ul>
+    <li>Acquire Twitter API credentials<li>
+    <li>Decide on the interested timeframe (May, Sept., Oct., Nov.)<li>
+    <li>Build a hydrator to hydrate the COVID-19 Twitter dataset from the timeframe<li>
+    <li>Filter the text of each tweets with keywords related to education: “teach”, “educat”, “school”, “student”, “university”, “college”<li>
+    <li>Develop modules to allow user interactions:
+        <ol> 
+            <li>To download filtered dataset locally as their own structured database for further analysis <li>
+            <li>To input their own keywords and timeframe to filter the original covid-19 Twitter dataset<li>
+        <ol>
+    <li>
+<ul>  
 
 
-# EXPLORATORY DATA ANALYTICS
-
-[Exploratory Data Analytics Report]
-(https://github.com/kos26/CrimeAnalysis/blob/main/Reports/DSCI%20591%20Exploratory%20Data%20Analytics%20Report.pdf)
+## EXPLORATORY DATA ANALYTICS
+[Exploratory Data Analytics]
 
 
-# DATA VISUALIZATION
 
-# FINAL PRESENTATION
+## CONCLUSION
+[Conclusion]
+ The primary aim of this project was to classify educational tweets and determine whether the tweets will help us to identify reopening of educational institution during the covid19. By applying Feature engineering on text data to vectorize them using TDF-IDF vectorizer and suitable classifier models such as 'Naive-Bayes', 'Logistic regression' 'Decision-tree',and 'Random Forest' the project aimed to detect the mode of learning institutions are opting.
+
+Apart from Feature engineering and Classification, suitable Model evaluation and tuning like 'accuracy', 'recall', 'precision' and 'f1 score' metrics were calculated on `full_text` which can be seen in the table
+    
+    
+|                     | accuracy 	|   recall 	| precision 	|       f1 	|      auc 	|
+|---------------------|-------------|-----------|---------------|-----------|-----------|
+|     Naive_Bayes     | 0.808511 	| 0.863928 	| 0.911924  	| 0.887278 	| 0.614027 	|
+| Logistic_Regression | 0.839866 	| 0.859734 	| 0.963415  	| 0.908626 	| 0.607514 	|
+|    Random_forest    | 0.840985 	| 0.843318 	| 0.991870  	| 0.911582 	| 0.557225 	|
+|    Decision_trees   | 0.802912 	| 0.855696 	| 0.915989  	| 0.884817 	| 0.590253 	|
+
+
+
+## FINAL PRESENTATION
+[Final Presentation]
+(https://drexel.zoom.us/rec/share/17mfadn1t3GS0NTCx272qBPVjMlfyRPwomnVc4v7QAfPfvR5Ss8oN1z2cDtqfovc.opfOG53Tg24WuBNp  (Passcode: ?%6=mWVN))
