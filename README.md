@@ -65,8 +65,8 @@ Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. 
 - Build a hydrator to hydrate the COVID-19 Twitter dataset from the timeframe<li>
 - Filter the text of each tweets with keywords related to education: “teach”, “educat”, “school”, “student”, “university”, “college”<li>
 - Develop modules to allow user interactions:
-&emspTo download filtered dataset locally as their own structured database for further analysis
-&emspTo input their own keywords and timeframe to filter the original covid-19 Twitter dataset
+To download filtered dataset locally as their own structured database for further analysis<br>
+To input their own keywords and timeframe to filter the original covid-19 Twitter dataset<br>
 
 
 ## EXPLORATORY DATA ANALYTICS
