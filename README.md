@@ -49,12 +49,12 @@ We'll be doing detailed analysis on text data and manually label each tweets aft
 
 ## MAIN DATASETS
 ### A large-scale COVID-19 Twitter chatter dataset by Banda et al. (2020): 
-- Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords: 
+- Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords:<br> 
 “COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”
 - Has been sharing dehydrated daily dataset since March to the present day (as of 03/10/2021) on Github: 
 https://github.com/thepanacealab/covid19_twitter
-- Article introducing the dataset by the authors: 
-Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020). A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688
+- Article introducing the dataset by the authors:<br>
+Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020).<br>A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688
 
 
 ## DATA-PRE-PROCESSING
@@ -65,8 +65,8 @@ Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. 
 - Build a hydrator to hydrate the COVID-19 Twitter dataset from the timeframe
 - Filter the text of each tweets with keywords related to education: “teach”, “educat”, “school”, “student”, “university”, “college”
 - Develop modules to allow user interactions:
-To download filtered dataset locally as their own structured database for further analysis<br>
-To input their own keywords and timeframe to filter the original covid-19 Twitter dataset<br>
+<br>To download filtered dataset locally as their own structured database for further analysis.<br>
+To input their own keywords and timeframe to filter the original covid-19 Twitter dataset.
 
 
 ## EXPLORATORY DATA ANALYTICS
