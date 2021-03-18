@@ -49,14 +49,12 @@ We'll be doing detailed analysis on text data and manually label each tweets aft
 
 ## MAIN DATASETS
 ### A large-scale COVID-19 Twitter chatter dataset by Banda et al. (2020): 
-<ul>
-    <li>Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords: 
-    “COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”<li>
-    <li>Has been sharing dehydrated daily dataset since March to the present day (as of 03/10/2021) on Github: 
-    https://github.com/thepanacealab/covid19_twitter<li>
-    <li>Article introducing the dataset by the authors: 
-    Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020). A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688<li>
-<ul>
+- Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords: 
+“COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”<li>
+- Has been sharing dehydrated daily dataset since March to the present day (as of 03/10/2021) on Github: 
+https://github.com/thepanacealab/covid19_twitter<li>
+- Article introducing the dataset by the authors: 
+Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020). A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688
 
 
 ## DATA-PRE-PROCESSING
