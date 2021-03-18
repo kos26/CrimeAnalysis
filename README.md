@@ -50,9 +50,9 @@ We'll be doing detailed analysis on text data and manually label each tweets aft
 ## MAIN DATASETS
 ### A large-scale COVID-19 Twitter chatter dataset by Banda et al. (2020): 
 - Uses Twitter Stream API to collect tweets since March 2020 based on the following keywords: 
-“COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”<li>
+“COVD19”, “CoronavirusPandemic”, “COVID-19”, “2019nCoV”, “CoronaOutbreak”, “coronavirus”, “WuhanVirus”
 - Has been sharing dehydrated daily dataset since March to the present day (as of 03/10/2021) on Github: 
-https://github.com/thepanacealab/covid19_twitter<li>
+https://github.com/thepanacealab/covid19_twitter
 - Article introducing the dataset by the authors: 
 Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. (2020). A large-scale COVID-19 Twitter chatter dataset for open scientific research--an international collaboration. arXiv preprint arXiv:2004.03688
 
@@ -60,18 +60,13 @@ Banda, J. M., Tekumalla, R., Wang, G., Yu, J., Liu, T., Ding, Y., & Chowell, G. 
 ## DATA-PRE-PROCESSING
 
 [Data Acquisition and Per-Processing Report]
-<ul>
-    <li>Acquire Twitter API credentials<li>
-    <li>Decide on the interested timeframe (May, Sept., Oct., Nov.)<li>
-    <li>Build a hydrator to hydrate the COVID-19 Twitter dataset from the timeframe<li>
-    <li>Filter the text of each tweets with keywords related to education: “teach”, “educat”, “school”, “student”, “university”, “college”<li>
-    <li>Develop modules to allow user interactions:
-        <ol> 
-            <li>To download filtered dataset locally as their own structured database for further analysis <li>
-            <li>To input their own keywords and timeframe to filter the original covid-19 Twitter dataset<li>
-        <ol>
-    <li>
-<ul>  
+- Acquire Twitter API credentials<li>
+- Decide on the interested timeframe (May, Sept., Oct., Nov.)<li>
+- Build a hydrator to hydrate the COVID-19 Twitter dataset from the timeframe<li>
+- Filter the text of each tweets with keywords related to education: “teach”, “educat”, “school”, “student”, “university”, “college”<li>
+- Develop modules to allow user interactions:
+&emspTo download filtered dataset locally as their own structured database for further analysis
+&emspTo input their own keywords and timeframe to filter the original covid-19 Twitter dataset
 
 
 ## EXPLORATORY DATA ANALYTICS
