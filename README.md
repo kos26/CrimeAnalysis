@@ -76,9 +76,9 @@ To input their own keywords and timeframe to filter the original covid-19 Twitte
 
 ## CONCLUSION
 [Conclusion]
- The primary aim of this project was to classify educational tweets and determine whether the tweets will help us to identify reopening of educational institution during the covid19. By applying Feature engineering on text data to vectorize them using TDF-IDF vectorizer and suitable classifier models such as 'Naive-Bayes', 'Logistic regression' 'Decision-tree',and 'Random Forest' the project aimed to detect the mode of learning institutions are opting.
+<br>The primary aim of this project was to classify educational tweets and determine whether the tweets will help us to identify reopening of educational institution during the covid19. By applying Feature engineering on text data to vectorize them using TDF-IDF vectorizer and suitable classifier models such as 'Naive-Bayes', 'Logistic regression' 'Decision-tree',and 'Random Forest' the project aimed to detect the mode of learning institutions are opting.<br><br>
 
-Apart from Feature engineering and Classification, suitable Model evaluation and tuning like 'accuracy', 'recall', 'precision' and 'f1 score' metrics were calculated on `full_text` which can be seen in the table
+Apart from Feature engineering and Classification, suitable Model evaluation and tuning like 'accuracy', 'recall', 'precision' and 'f1 score' metrics were calculated on `full_text` which can be seen in the table<br>
     
     
 |                     | accuracy 	|   recall 	| precision 	|       f1 	|      auc 	|
